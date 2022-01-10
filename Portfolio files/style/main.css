@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: right;
+  height: 60px;
+  align-items: center;
+  position: sticky;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica;
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  padding: 8px 20px;
+  color: white;
+}
+
+.navbar ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+.ToggleButton {
+  display: none;
+}
+
+/* Home Section */
+#Home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  background-image: url("Portfolio-picture.jpg");
+  background-position: center;
+  background-size: length;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+#Home::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.heading {
+  color: black;
+  font-size: 3.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  transform: scale(1, 1.3);
+}
+
+@media (max-width: 425px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .navbar {
+    flex-direction: column;
+    height: 7em;
+    transition: all 1s ease-in-out;
+  }
+  .hide {
+    visibility: hidden;
+  }
+  .navbar ul {
+    flex-direction: column;
+    transition: all 1s ease-in-out;
+  }
+  .ToggleButton {
+    display: block;
+  }
+  .ToggleButton img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+
+.para-1 {
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Work (Portfolio) Section */
+#Work {
+  display: flex;
+  height: 650px;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+#Work h1 {
+  margin: 60px;
+}
+
+.para-2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.list {
+  list-style-position: inside;
+  text-align: center;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding: 15px;
+  border-width: 7px;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Journal Section */
+#Journal {
+  display: flex;
+  height: 650px;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+#Journal h1 {
+  margin: 60px;
+}
+
+.para-3 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding: 15px;
+  border-width: 7px;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* About Section */
+#About {
+  display: flex;
+  height: 650px;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+#About h1 {
+  margin: 60px;
+}
+
+.para-4 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding: 15px;
+  border-width: 7px;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Contact Section */
+#Contact {
+  display: flex;
+  height: 650px;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+#Contact h1 {
+  margin: 60px;
+}
+
+/* Footer */
+footer {
+  color: white;
+  background-color: black;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+footer ul {
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer li {
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+footer i {
+  cursor: pointer;
+  font-size: 25px;
+}
